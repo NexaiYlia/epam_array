@@ -1,0 +1,102 @@
+2022-02-26 18:50:46 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@6d025197
+2022-02-26 18:50:46 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@2ea6e30c
+2022-02-26 18:51:53 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@3c7c886c
+2022-02-26 18:51:53 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-02-26 18:52:00 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@38aa816f
+2022-02-26 18:52:26 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@554e218
+2022-02-26 18:52:26 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-02-26 18:53:02 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@31c7528f
+2022-02-26 18:53:20 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@1a20270e
+2022-02-26 18:53:20 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@30af5b6b
+2022-02-26 18:54:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@2f62ea70
+2022-02-26 18:54:48 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-02-26 18:56:45 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@2f62ea70
+2022-02-26 18:56:45 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-02-26 18:56:45 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@6ed3f258
+2022-02-26 18:57:12 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@38aa816f
+2022-02-26 18:57:12 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@32a68f4f
+2022-02-26 18:57:27 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@38aa816f
+2022-02-26 18:58:00 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@53941c2f
+2022-02-26 18:58:38 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[I@6b88ca8c
+2022-02-26 18:58:53 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[I@5812f68b
+2022-02-26 19:04:35 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[I@6bffbc6d
+2022-02-26 19:05:36 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[I@1b84f475
+2022-02-26 19:05:36 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[I@40db2a24
+2022-02-26 19:05:36 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[I@1921ad94
+2022-02-26 19:09:31 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 5, -7, 11, 0]
+2022-02-26 19:09:31 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[I@7e6ef134
+2022-02-26 19:09:31 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[I@40db2a24
+2022-02-26 19:13:22 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements[-3, -55, -243, -1]
+2022-02-26 19:13:34 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements[-3, -55, -243, -1]
+2022-02-26 19:21:08 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements[0, 0, 0, 0, 0]
+2022-02-26 19:24:38 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements with Stream API[-3, -55, -243, -1]
+2022-02-26 19:27:01 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements with Stream API[]
+2022-02-26 19:27:01 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-02-26 19:28:19 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[]
+2022-02-26 19:28:19 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-02-26 19:30:37 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements[0, 0, 0, 0, 0]
+2022-02-26 19:31:14 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements[]
+2022-02-26 19:31:14 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-02-26 19:33:41 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements with Stream API[-3, -55, -243, -1]
+2022-02-26 19:33:41 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements[]
+2022-02-26 19:33:41 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-02-26 19:33:41 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[]
+2022-02-26 19:33:41 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-02-26 19:33:41 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 5, -7, 11, 0]
+2022-02-26 19:33:41 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[-3, -55, -243, -1]
+2022-02-26 19:33:41 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 5, -7, 11, 0]
+2022-02-26 19:33:41 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements with Stream API[]
+2022-02-26 19:33:41 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-02-26 19:33:41 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements with Stream API[-3, -55, -243, -1]
+2022-02-26 19:33:41 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements[-3, -55, -243, -1]
