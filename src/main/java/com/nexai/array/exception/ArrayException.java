@@ -10,8 +10,8 @@ public class ArrayException extends Exception {
         super(message);
     }
 
-    public ArrayException(String message, Throwable cause) {
-        super(message, cause);
+    public ArrayException(String message, Exception e) {
+        super(message, e);
     }
 
     public ArrayException(Throwable cause) {
