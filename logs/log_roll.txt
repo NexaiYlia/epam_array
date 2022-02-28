@@ -100,3 +100,33 @@
             nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements with Stream API[-3, -55, -243, -1]
 2022-02-26 19:33:41 [main] INFO 
             nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate sum of array elements[-3, -55, -243, -1]
+2022-02-28 15:01:25 [main] INFO 
+            nexai.array.service.impl.ArrayChangeServiceImpl - Replace negative array values by zero[I@7fb95505
+2022-02-28 15:02:29 [main] INFO 
+            nexai.array.service.impl.ArrayChangeServiceImpl - Replace negative array values by zero[I@3ad2e17
+2022-02-28 15:02:54 [main] INFO 
+            nexai.array.service.impl.ArrayChangeServiceImpl - Replace negative array values by zero[I@3ad2e17
+2022-02-28 15:03:21 [main] INFO 
+            nexai.array.service.impl.ArrayChangeServiceImpl - Replace negative array values by zero[I@4331d187
+2022-02-28 15:05:01 [main] INFO 
+            nexai.array.service.impl.ArrayChangeServiceImpl - Replace even array values by two[I@53f6fd09
+2022-02-28 15:06:01 [main] INFO 
+            nexai.array.service.impl.ArrayChangeServiceImpl - Replace even array values by two[I@2e6a5539
+2022-02-28 15:07:27 [main] INFO 
+            nexai.array.service.impl.ArrayChangeServiceImpl - Replace even array values by two[I@53f6fd09
+2022-02-28 15:11:37 [main] INFO 
+            nexai.array.service.impl.ArraySearchServiceImpl - Find count of negative array elements[I@466276d8
+2022-02-28 15:12:30 [main] INFO 
+            nexai.array.service.impl.ArraySearchServiceImpl - Find count of negative array elements[I@5ce8d869
+2022-02-28 15:12:41 [main] INFO 
+            nexai.array.service.impl.ArraySearchServiceImpl - Find count of negative array elements[I@52c3cb31
+2022-02-28 15:12:46 [main] INFO 
+            nexai.array.service.impl.ArraySearchServiceImpl - Find count of negative array elements[I@2f16c6b3
+2022-02-28 15:13:20 [main] INFO 
+            nexai.array.service.impl.ArraySearchServiceImpl - Find count of negative array elements[I@38aa816f
+2022-02-28 15:19:23 [main] INFO 
+            nexai.array.service.impl.ArraySearchServiceImpl - Find count of negative array elements[I@1608bcbd
+2022-02-28 15:20:41 [main] INFO 
+            nexai.array.service.impl.ArraySearchServiceImpl - Find count of negative array elements[I@5812f68b
+2022-02-28 15:21:33 [main] INFO 
+            nexai.array.service.impl.ArraySearchServiceImpl - Find count of negative array elements with Stream API[I@1c481ff2
