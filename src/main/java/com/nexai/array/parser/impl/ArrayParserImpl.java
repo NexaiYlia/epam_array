@@ -7,8 +7,6 @@ import com.nexai.array.validation.ArrayStringValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.lang.reflect.Array;
-
 
 public class ArrayParserImpl implements ArrayParser {
     private static final Logger logger = LogManager.getLogger(ArrayParserImpl.class.getName());

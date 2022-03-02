@@ -5,7 +5,7 @@ import com.nexai.array.util.IdGenerator;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class ArrayEntity {
+public class ArrayEntity extends ArrayEntityBase {
     private int[] array;
     private Long idArray;
 
@@ -27,6 +27,7 @@ public class ArrayEntity {
 
     public void setArray(int[] array) {
         this.array = array;
+        notifyObservers();
     }
 
     public long getIdArray() {

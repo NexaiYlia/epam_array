@@ -1,5 +1,6 @@
 package com.nexai.array.entity;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Warehouse {
@@ -7,6 +8,7 @@ public class Warehouse {
     private Map<Long, ArrayEntityParameters> arrayMap;
 
     private Warehouse() {
+        arrayMap = new HashMap<>();
     }
 
     public static Warehouse getInstance() {

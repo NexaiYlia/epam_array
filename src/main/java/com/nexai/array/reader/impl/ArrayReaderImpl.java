@@ -1,19 +1,23 @@
 package com.nexai.array.reader.impl;
 
 import com.nexai.array.exception.ArrayReaderException;
-import com.nexai.array.exception.FileNotExistException;
 import com.nexai.array.reader.ArrayReader;
-import com.nexai.array.validation.TextFileValidator;
+import com.nexai.array.validation.ArrayStringValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class ArrayReaderImpl implements ArrayReader {
     private static final Logger logger = LogManager.getLogger(ArrayReaderImpl.class.getName());
     private static final String PATHNAME = "resources/data/array.txt";
 
-    public String readArrayFromFile(String PATHNAME) throws ArrayReaderException, FileNotExistException {
+    public String readArrayFromFile(String PATHNAME) throws ArrayReaderException {
         String line;
         try (BufferedReader reader = new BufferedReader(new FileReader(PATHNAME))) {
             line = reader.readLine();
@@ -23,7 +27,7 @@ public class ArrayReaderImpl implements ArrayReader {
             }
         } catch (FileNotFoundException e) {
             logger.error("Incorrect line");
-            throw new FileNotExistException("This file " + PATHNAME + " not exist");
+            throw new ArrayReaderException("This file " + PATHNAME + " not exist");
 
         } catch (IOException e) {
 
@@ -32,6 +36,20 @@ public class ArrayReaderImpl implements ArrayReader {
         }
         return line;
     }
+
+    public List<String> readAllArrayFromFileStream(String PATHNAME) throws ArrayReaderException {
+        List<String> lines;
+        Path path = Paths.get(PATHNAME);
+        try {
+            Stream<String> lineStream = Files.lines(path);
+            lines = lineStream.filter(ArrayStringValidator::validateArrayStringLine).toList();
+        } catch (IOException e) {
+            logger.error("Incorrect line" + e.getMessage());
+            throw new ArrayReaderException("The line could not be read", e);
+        }
+        return lines;
+    }
+
 }
 
 
