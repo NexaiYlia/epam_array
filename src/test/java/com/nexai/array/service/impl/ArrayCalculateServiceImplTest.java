@@ -3,15 +3,22 @@ package com.nexai.array.service.impl;
 import com.nexai.array.entity.ArrayEntity;
 import com.nexai.array.exception.ArrayException;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class ArrayCalculateServiceImplTest {
 
-    private ArrayCalculateServiceImpl service = new ArrayCalculateServiceImpl();
-    private final ArrayEntity arrayEntityBase = new ArrayEntity(3, 5, -7, 11, 0);
-    private final ArrayEntity arrayEntityNegative = new ArrayEntity(-3, -55, -243, -1);
-    private final ArrayEntity arrayEntityZero = new ArrayEntity(0, 0, 0, 0, 0);
+    private final ArrayEntity arrayEntityBase = new ArrayEntity(new int[]{3, 5, -7, 11, 0});
+    private final ArrayEntity arrayEntityNegative = new ArrayEntity(new int[]{3, 5, -7, 11, 0});
+    private final ArrayEntity arrayEntityZero = new ArrayEntity(new int[]{3, 5, -7, 11, 0});
     private final ArrayEntity arrayEntityEmpty = new ArrayEntity(new int[0]);
+    private ArrayCalculateServiceImpl service;
+
+    @BeforeClass
+    public void setUp() {
+        service = new ArrayCalculateServiceImpl();
+    }
 
     @Test
     public void calculateMaxElementOfArrayPositiveTest() throws ArrayException {
@@ -71,5 +78,10 @@ public class ArrayCalculateServiceImplTest {
         double actual = service.calculateAverageValueOfArrayElementsStream(arrayEntityNegative);
         double expected = -75.5;
         Assert.assertEquals(actual, expected);
+    }
+
+    @AfterClass
+    public void tierDown() {
+        service = null;
     }
 }

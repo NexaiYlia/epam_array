@@ -1,24 +1,27 @@
 package com.nexai.array.entity;
 
+import com.nexai.array.observer.ArrayObservable;
 import com.nexai.array.util.IdGenerator;
 
 import java.util.Arrays;
 import java.util.Objects;
 
-public class ArrayEntity {
+public class ArrayEntity extends ArrayEntityBase {
     private int[] array;
     private Long idArray;
 
     public ArrayEntity() {
+        this.array = new int[0];
+        this.idArray = IdGenerator.generateId();
+        Warehouse.getInstance().put(idArray, new ArrayEntityParameters());
     }
 
     public ArrayEntity(int[] array) {
         this.array = array;
-    }
-
-    public ArrayEntity(int[] array, Long idArray) {
-        this.array = array;
         this.idArray = IdGenerator.generateId();
+        Warehouse.getInstance().put(idArray, new ArrayEntityParameters());
+        attach(new ArrayObservable());
+        notifyObservers();
     }
 
     public int[] getArray() {
@@ -27,6 +30,7 @@ public class ArrayEntity {
 
     public void setArray(int[] array) {
         this.array = array;
+        notifyObservers();
     }
 
     public long getIdArray() {

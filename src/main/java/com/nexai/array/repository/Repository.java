@@ -1,11 +1,12 @@
 package com.nexai.array.repository;
 
 import com.nexai.array.entity.ArrayEntity;
+import com.nexai.array.entity.ArrayEntityBase;
 
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
+
 
 public class Repository {
 
@@ -52,12 +53,12 @@ public class Repository {
     }
 
     public List<ArrayEntity> query(Specification specification) {
-        List<ArrayEntity> list = arrayEntityList.stream().filter(o -> specification.specify(o)).collect(Collectors.toList());
+        List<ArrayEntity> list = arrayEntityList.stream().filter(specification::specify).toList();
         return list;
     }
 
-    public List<ArrayEntity> query(Predicate<ArrayEntity> specification) {
-        List<ArrayEntity> list = arrayEntityList.stream().filter(o -> specification.test(o)).collect(Collectors.toList());
+    public List<ArrayEntity> sort(Comparator<? super ArrayEntityBase> comparator) {
+        List<ArrayEntity> list = arrayEntityList.stream().sorted(comparator).toList();
         return list;
     }
 

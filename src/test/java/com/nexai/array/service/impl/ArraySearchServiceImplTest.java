@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 
 public class ArraySearchServiceImplTest {
     private ArraySearchServiceImpl service = new ArraySearchServiceImpl();
-    private final ArrayEntity arrayEntityBase = new ArrayEntity(3, 5, -7, 4, 0);
-    private final ArrayEntity arrayEntityNegative = new ArrayEntity(-3, -55, -243, -1);
-    private final ArrayEntity arrayEntityZero = new ArrayEntity(0, 0, 0, 0, 0);
+    private final ArrayEntity arrayEntityBase = new ArrayEntity(new int[]{3, 5, -7, 11, 0});
+    private final ArrayEntity arrayEntityNegative = new ArrayEntity(new int[]{3, 5, -7, 11, 0});
+    private final ArrayEntity arrayEntityZero = new ArrayEntity(new int[]{3, 5, -7, 11, 0});
     private final ArrayEntity arrayEntityEmpty = new ArrayEntity(new int[0]);
 
     @Test

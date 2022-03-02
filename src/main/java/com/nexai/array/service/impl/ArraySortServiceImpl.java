@@ -5,6 +5,9 @@ import com.nexai.array.service.ArraySortService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 public class ArraySortServiceImpl implements ArraySortService {
     private static final Logger logger = LogManager.getLogger(ArraySortServiceImpl.class.getName());
 
@@ -23,7 +26,6 @@ public class ArraySortServiceImpl implements ArraySortService {
             }
         }
     }
-
 
     @Override
     public void selectionSort(ArrayEntity arrayEntity) {
@@ -57,6 +59,13 @@ public class ArraySortServiceImpl implements ArraySortService {
             }
             array[i + 1] = value;
         }
+    }
+
+    @Override
+    public void arraySortStream(ArrayEntity arrayEntity) {
+        logger.info("Array sorted with strem" + arrayEntity.getArray());
+        int[] array = arrayEntity.getArray();
+        IntStream stream = Arrays.stream(Arrays.stream(array).sorted().toArray());
     }
 
     private void change(int[] array, int ind1, int ind2) {

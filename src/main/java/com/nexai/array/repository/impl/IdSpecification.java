@@ -13,6 +13,6 @@ public class IdSpecification implements Specification {
     @Override
     public boolean specify(ArrayEntity arrayEntity) {
         boolean result = (arrayEntity.getIdArray() == id);
-        return false;
+        return result;
     }
 }
