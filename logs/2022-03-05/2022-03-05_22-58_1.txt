@@ -1,0 +1,197 @@
+2022-03-05 22:20:58 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[]
+2022-03-05 22:20:58 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-03-05 22:20:58 [main] ERROR
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parameters is failed 
+com.nexai.array.exception.ArrayException: This array is empty or null
+	at com.nexai.array.service.impl.ArrayCalculateServiceImpl.calculateMaxElementOfArray(ArrayCalculateServiceImpl.java:33) ~[classes/:?]
+	at com.nexai.array.observer.ArrayObservable.parameterChanged(ArrayObservable.java:21) ~[classes/:?]
+	at com.nexai.array.entity.ArrayEntityBase.notifyObservers(ArrayEntityBase.java:32) ~[classes/:?]
+	at com.nexai.array.entity.ArrayEntity.<init>(ArrayEntity.java:24) ~[classes/:?]
+	at com.nexai.array.creator.impl.ArrayCreatorImpl.createArrayEntity(ArrayCreatorImpl.java:17) ~[classes/:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at com.nexai.array.creator.impl.ArrayCreatorImpl.createListArrayEntityStream(ArrayCreatorImpl.java:30) ~[classes/:?]
+	at com.nexai.array.creator.ArrayCreatorImplTest.testCreateListOfCustomArraysStream(ArrayCreatorImplTest.java:96) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.5.jar:7.5]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:808) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.run(TestRunner.java:603) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuites(TestNG.java:1092) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.run(TestNG.java:1060) [testng-7.5.jar:7.5]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) [testng-rt.jar:?]
+2022-03-05 22:23:30 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-05 22:23:30 [main] ERROR
+            nexai.array.parser.impl.ArrayParserImpl - Incorrect data format
+2022-03-05 22:24:03 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-05 22:24:32 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-05 22:24:32 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-05 22:24:32 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-05 22:24:32 [main] ERROR
+            nexai.array.parser.impl.ArrayParserImpl - Incorrect data format
+2022-03-05 22:24:32 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-05 22:24:32 [main] ERROR
+            nexai.array.parser.impl.ArrayParserImpl - Incorrect data format
+2022-03-05 22:24:32 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-05 22:24:44 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-05 22:24:44 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-05 22:24:44 [main] ERROR
+            nexai.array.parser.impl.ArrayParserImpl - Incorrect data format
+2022-03-05 22:24:44 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Arrays list parsed.[]
+2022-03-05 22:24:53 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='-78' parsed. [-78]
+2022-03-05 22:24:53 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='44' parsed. [44]
+2022-03-05 22:24:58 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - All line is parsed with stream[]
+2022-03-05 22:27:43 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='12345' parsed. [12345]
+2022-03-05 22:28:59 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='12345' parsed. [12345]
+2022-03-05 22:39:28 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:40:11 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:40:11 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:42:01 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:42:01 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:42:14 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:42:14 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:42:58 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:42:58 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:49:45 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linesrc\test\resources\files\arraysTest.txt
+2022-03-05 22:50:10 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linesrc\test\resources\files\arrays.txt
+2022-03-05 22:51:07 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linesrc\test\resources\files\arrays.txt
+2022-03-05 22:51:07 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:51:07 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-05 22:57:56 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 5, -7, 11, 0]
+2022-03-05 22:57:56 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 5, -7, 11, 0]
+2022-03-05 22:57:56 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[3, 5, -7, 11, 0]
+2022-03-05 22:57:56 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[11], minElement=OptionalInt[-7], averageValue=OptionalDouble[2.0], elementsCount=OptionalInt[5]}
+2022-03-05 22:57:56 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 5, -7, 11, 0]
+2022-03-05 22:57:56 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 5, -7, 11, 0]
+2022-03-05 22:57:56 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[3, 5, -7, 11, 0]
+2022-03-05 22:57:56 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[11], minElement=OptionalInt[-7], averageValue=OptionalDouble[2.0], elementsCount=OptionalInt[5]}
+2022-03-05 22:57:56 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 5, -7, 11, 0]
+2022-03-05 22:57:56 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 5, -7, 11, 0]
+2022-03-05 22:57:56 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[3, 5, -7, 11, 0]
+2022-03-05 22:57:56 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[11], minElement=OptionalInt[-7], averageValue=OptionalDouble[2.0], elementsCount=OptionalInt[5]}
+2022-03-05 22:57:56 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[]
+2022-03-05 22:57:56 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-03-05 22:57:56 [main] ERROR
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parameters is failed 
+com.nexai.array.exception.ArrayException: This array is empty or null
+	at com.nexai.array.service.impl.ArrayCalculateServiceImpl.calculateMaxElementOfArray(ArrayCalculateServiceImpl.java:33) ~[classes/:?]
+	at com.nexai.array.observer.ArrayObservable.parameterChanged(ArrayObservable.java:21) [classes/:?]
+	at com.nexai.array.entity.ArrayEntityBase.notifyObservers(ArrayEntityBase.java:32) [classes/:?]
+	at com.nexai.array.entity.ArrayEntity.<init>(ArrayEntity.java:24) [classes/:?]
+	at com.nexai.array.validation.ArrayValidatorTest.<init>(ArrayValidatorTest.java:11) [test-classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78) [?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) [?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) [?:?]
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:38) [testng-7.5.jar:7.5]
+	at org.testng.ITestObjectFactory.newInstance(ITestObjectFactory.java:18) [testng-7.5.jar:7.5]
+	at org.testng.internal.objects.SimpleObjectDispenser.instantiateUsingDefaultConstructor(SimpleObjectDispenser.java:178) [testng-7.5.jar:7.5]
+	at org.testng.internal.objects.SimpleObjectDispenser.createInstance(SimpleObjectDispenser.java:87) [testng-7.5.jar:7.5]
+	at org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:40) [testng-7.5.jar:7.5]
+	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:28) [testng-7.5.jar:7.5]
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:106) [testng-7.5.jar:7.5]
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:136) [testng-7.5.jar:7.5]
+	at org.testng.TestClass.getInstances(TestClass.java:129) [testng-7.5.jar:7.5]
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:109) [testng-7.5.jar:7.5]
+	at org.testng.TestClass.init(TestClass.java:101) [testng-7.5.jar:7.5]
+	at org.testng.TestClass.<init>(TestClass.java:66) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.initMethods(TestRunner.java:465) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.init(TestRunner.java:333) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.init(TestRunner.java:286) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.<init>(TestRunner.java:176) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:635) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.init(SuiteRunner.java:221) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:114) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1342) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1318) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1160) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuites(TestNG.java:1092) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.run(TestNG.java:1060) [testng-7.5.jar:7.5]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) [testng-rt.jar:?]
+2022-03-05 22:58:34 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 5, -7, 11, 0]
+2022-03-05 22:58:34 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 5, -7, 11, 0]
+2022-03-05 22:58:34 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[3, 5, -7, 11, 0]
+2022-03-05 22:58:34 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[11], minElement=OptionalInt[-7], averageValue=OptionalDouble[2.0], elementsCount=OptionalInt[5]}
+2022-03-05 22:58:34 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 5, -7, 11, 0]
+2022-03-05 22:58:34 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 5, -7, 11, 0]
+2022-03-05 22:58:34 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[3, 5, -7, 11, 0]
+2022-03-05 22:58:34 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[11], minElement=OptionalInt[-7], averageValue=OptionalDouble[2.0], elementsCount=OptionalInt[5]}

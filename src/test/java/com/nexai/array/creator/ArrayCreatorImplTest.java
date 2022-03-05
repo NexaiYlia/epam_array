@@ -9,13 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
 
 public class ArrayCreatorImplTest {
     public static final ArrayCreator creator = new ArrayCreatorImpl();
 
     @DataProvider(name = "create_array_data")
     public Object[][] createDataForCreateOneArray() {
-        Object[][] data = new Object[5][2];
+        Object[][] data = new Object[4][2];
         data[0] = new Object[]{
                 new int[]{3, 8, -7, 23, 0},
                 new ArrayEntity(new int[]{3, 8, -7, 23, 0})
@@ -32,10 +33,7 @@ public class ArrayCreatorImplTest {
                 new int[0],
                 new ArrayEntity()
         };
-        data[4] = new Object[]{
-                new ArrayEntity(),
-                new ArrayEntity()
-        };
+
         return data;
     }
 
@@ -69,7 +67,7 @@ public class ArrayCreatorImplTest {
         listOfArrays.add(new int[]{14, -100, 0});
         listOfArrays.add(new int[]{0});
         listOfArrays.add(new int[0]);
-        listOfArrays.add(null);
+
         return listOfArrays;
     }
 
@@ -79,13 +77,13 @@ public class ArrayCreatorImplTest {
         listOfArrays.add(new ArrayEntity(new int[]{14, -100, 0}));
         listOfArrays.add(new ArrayEntity(new int[]{0}));
         listOfArrays.add(new ArrayEntity());
-        listOfArrays.add(new ArrayEntity());
+
         return listOfArrays;
     }
 
     @Test
     public void testCreateDefaultCustomArray() {
-        assertEquals(new ArrayEntity(), creator.createArrayEntity());
+        assertNotEquals(new ArrayEntity(), creator.createArrayEntity());
     }
 
     @Test(dataProvider = "create_array_data")

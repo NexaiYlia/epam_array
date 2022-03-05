@@ -1,0 +1,180 @@
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[0, 20, -1]
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[0, 20, -1]
+2022-03-05 22:20:16 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[20], minElement=OptionalInt[-1], averageValue=OptionalDouble[6.0], elementsCount=OptionalInt[3]}
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.creator.impl.ArrayCreatorImpl - create new ArrayEntity
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[0]
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[0]
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[0]
+2022-03-05 22:20:16 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[0], minElement=OptionalInt[0], averageValue=OptionalDouble[0.0], elementsCount=OptionalInt[1]}
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[0]
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[0]
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[0]
+2022-03-05 22:20:16 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[0], minElement=OptionalInt[0], averageValue=OptionalDouble[0.0], elementsCount=OptionalInt[1]}
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.creator.impl.ArrayCreatorImpl - create new ArrayEntity
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[]
+2022-03-05 22:20:16 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-03-05 22:20:16 [main] ERROR
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parameters is failed 
+com.nexai.array.exception.ArrayException: This array is empty or null
+	at com.nexai.array.service.impl.ArrayCalculateServiceImpl.calculateMaxElementOfArray(ArrayCalculateServiceImpl.java:33) ~[classes/:?]
+	at com.nexai.array.observer.ArrayObservable.parameterChanged(ArrayObservable.java:21) ~[classes/:?]
+	at com.nexai.array.entity.ArrayEntityBase.notifyObservers(ArrayEntityBase.java:32) ~[classes/:?]
+	at com.nexai.array.entity.ArrayEntity.<init>(ArrayEntity.java:24) ~[classes/:?]
+	at com.nexai.array.creator.impl.ArrayCreatorImpl.createArrayEntity(ArrayCreatorImpl.java:16) ~[classes/:?]
+	at com.nexai.array.creator.ArrayCreatorImplTest.testCreateOneArrayWithParam(ArrayCreatorImplTest.java:94) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.5.jar:7.5]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:808) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.run(TestRunner.java:603) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuites(TestNG.java:1092) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.run(TestNG.java:1060) [testng-7.5.jar:7.5]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) [testng-rt.jar:?]
+2022-03-05 22:20:16 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[]
+2022-03-05 22:20:16 [main] ERROR
+            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
+2022-03-05 22:20:16 [main] ERROR
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parameters is failed 
+com.nexai.array.exception.ArrayException: This array is empty or null
+	at com.nexai.array.service.impl.ArrayCalculateServiceImpl.calculateMaxElementOfArray(ArrayCalculateServiceImpl.java:33) ~[classes/:?]
+	at com.nexai.array.observer.ArrayObservable.parameterChanged(ArrayObservable.java:21) ~[classes/:?]
+	at com.nexai.array.entity.ArrayEntityBase.notifyObservers(ArrayEntityBase.java:32) ~[classes/:?]
+	at com.nexai.array.entity.ArrayEntity.<init>(ArrayEntity.java:24) ~[classes/:?]
+	at com.nexai.array.creator.impl.ArrayCreatorImpl.createArrayEntity(ArrayCreatorImpl.java:17) ~[classes/:?]
+	at com.nexai.array.creator.ArrayCreatorImplTest.testCreateOneArrayWithParam(ArrayCreatorImplTest.java:94) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.5.jar:7.5]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:808) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.run(TestRunner.java:603) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuites(TestNG.java:1092) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.run(TestNG.java:1060) [testng-7.5.jar:7.5]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) [testng-rt.jar:?]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 8, -7, 23, 0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 8, -7, 23, 0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[3, 8, -7, 23, 0]
+2022-03-05 22:20:48 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[23], minElement=OptionalInt[-7], averageValue=OptionalDouble[5.0], elementsCount=OptionalInt[5]}
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[0, 20, -1]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[0, 20, -1]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[0, 20, -1]
+2022-03-05 22:20:48 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[20], minElement=OptionalInt[-1], averageValue=OptionalDouble[6.0], elementsCount=OptionalInt[3]}
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[0]
+2022-03-05 22:20:48 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[0], minElement=OptionalInt[0], averageValue=OptionalDouble[0.0], elementsCount=OptionalInt[1]}
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.creator.impl.ArrayCreatorImpl - create new ArrayEntity
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 8, -7, 23, 0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 8, -7, 23, 0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[3, 8, -7, 23, 0]
+2022-03-05 22:20:48 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[23], minElement=OptionalInt[-7], averageValue=OptionalDouble[5.0], elementsCount=OptionalInt[5]}
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 8, -7, 23, 0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 8, -7, 23, 0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[3, 8, -7, 23, 0]
+2022-03-05 22:20:48 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[23], minElement=OptionalInt[-7], averageValue=OptionalDouble[5.0], elementsCount=OptionalInt[5]}
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.creator.impl.ArrayCreatorImpl - create new ArrayEntity
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[0, 20, -1]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[0, 20, -1]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[0, 20, -1]
+2022-03-05 22:20:48 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[20], minElement=OptionalInt[-1], averageValue=OptionalDouble[6.0], elementsCount=OptionalInt[3]}
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[0, 20, -1]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[0, 20, -1]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[0, 20, -1]
+2022-03-05 22:20:48 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[20], minElement=OptionalInt[-1], averageValue=OptionalDouble[6.0], elementsCount=OptionalInt[3]}
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.creator.impl.ArrayCreatorImpl - create new ArrayEntity
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[0]
+2022-03-05 22:20:48 [main] INFO 
+            com.nexai.array.observer.ArrayObservable - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[0], minElement=OptionalInt[0], averageValue=OptionalDouble[0.0], elementsCount=OptionalInt[1]}
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[0]
+2022-03-05 22:20:48 [main] INFO 
+            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[0]

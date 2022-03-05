@@ -17,7 +17,7 @@ public class ArrayReaderImpl implements ArrayReader {
     private static final Logger logger = LogManager.getLogger(ArrayReaderImpl.class.getName());
     private static final String PATHNAME = "resources/data/array.txt";
 
-    public String readArrayFromFile(String PATHNAME) throws ArrayReaderException {
+    public String readLineFromFile(String PATHNAME) throws ArrayReaderException {
         String line;
         try (BufferedReader reader = new BufferedReader(new FileReader(PATHNAME))) {
             line = reader.readLine();
@@ -37,7 +37,7 @@ public class ArrayReaderImpl implements ArrayReader {
         return line;
     }
 
-    public List<String> readAllArrayFromFileStream(String PATHNAME) throws ArrayReaderException {
+    public List<String> readAllLineFromFileStream(String PATHNAME) throws ArrayReaderException {
         List<String> lines;
         Path path = Paths.get(PATHNAME);
         try {
@@ -49,7 +49,6 @@ public class ArrayReaderImpl implements ArrayReader {
         }
         return lines;
     }
-
 }
 
 

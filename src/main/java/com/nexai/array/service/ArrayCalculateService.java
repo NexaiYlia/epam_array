@@ -3,10 +3,9 @@ package com.nexai.array.service;
 import com.nexai.array.entity.ArrayEntity;
 import com.nexai.array.exception.ArrayException;
 
-import java.util.OptionalDouble;
-import java.util.OptionalInt;
-
 public interface ArrayCalculateService {
+    int calculateSumElementOfArray(ArrayEntity arrayEntity) throws ArrayException;
+
     int calculateMaxElementOfArray(ArrayEntity arrayEntity) throws ArrayException;
 
     int calculateMaxElementOfArrayStream(ArrayEntity arrayEntity) throws ArrayException;

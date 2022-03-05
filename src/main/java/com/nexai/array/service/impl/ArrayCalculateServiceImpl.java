@@ -17,6 +17,23 @@ public class ArrayCalculateServiceImpl implements ArrayCalculateService {
     private static final Logger logger = LogManager.getLogger(ArrayCalculateServiceImpl.class.getName());
 
     @Override
+    public int calculateSumElementOfArray(ArrayEntity arrayEntity) throws ArrayException {
+        logger.info("Calculate sum elements of array" + Arrays.toString(arrayEntity.getArray()));
+        int sum;
+        if (ArrayValidator.validateArray(arrayEntity)) {
+            int[] array = arrayEntity.getArray();
+            sum = 0;
+            for (int i = 0; i < array.length; i++) {
+                sum = sum + array[i];
+            }
+        } else {
+            logger.error("This array is empty or null");
+            throw new ArrayException("This array is empty or null");
+        }
+        return sum;
+    }
+
+    @Override
     public int calculateMaxElementOfArray(ArrayEntity arrayEntity) throws ArrayException {
         logger.info("Calculate max element of array" + Arrays.toString(arrayEntity.getArray()));
         int max;

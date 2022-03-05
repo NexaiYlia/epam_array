@@ -4,6 +4,7 @@ import java.util.OptionalDouble;
 import java.util.OptionalInt;
 
 public class ArrayEntityParameters {
+    private OptionalInt sum;
     private OptionalInt maxElement;
     private OptionalInt minElement;
     private OptionalDouble averageValue;
@@ -12,7 +13,7 @@ public class ArrayEntityParameters {
     public ArrayEntityParameters() {
     }
 
-    public ArrayEntityParameters(int newMaxElement, int newMinElement, double newAverageValue, int newElementsCount) {
+    public ArrayEntityParameters(int sum, int newMaxElement, int newMinElement, double newAverageValue, int newElementsCount) {
         maxElement = OptionalInt.of(newMaxElement);
         minElement = OptionalInt.of(newMinElement);
         averageValue = OptionalDouble.of(newAverageValue);
@@ -51,6 +52,14 @@ public class ArrayEntityParameters {
         this.elementsCount = elementsCount;
     }
 
+    public OptionalInt getSum() {
+        return sum;
+    }
+
+    public void setSum(OptionalInt sum) {
+        this.sum = sum;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -58,6 +67,7 @@ public class ArrayEntityParameters {
 
         ArrayEntityParameters that = (ArrayEntityParameters) o;
 
+        if (sum != null ? !sum.equals(that.sum) : that.sum != null) return false;
         if (maxElement != null ? !maxElement.equals(that.maxElement) : that.maxElement != null) return false;
         if (minElement != null ? !minElement.equals(that.minElement) : that.minElement != null) return false;
         if (averageValue != null ? !averageValue.equals(that.averageValue) : that.averageValue != null) return false;
@@ -66,7 +76,8 @@ public class ArrayEntityParameters {
 
     @Override
     public int hashCode() {
-        int result = maxElement != null ? maxElement.hashCode() : 0;
+        int result = sum != null ? sum.hashCode() : 0;
+        result = 31 * result + (maxElement != null ? maxElement.hashCode() : 0);
         result = 31 * result + (minElement != null ? minElement.hashCode() : 0);
         result = 31 * result + (averageValue != null ? averageValue.hashCode() : 0);
         result = 31 * result + (elementsCount != null ? elementsCount.hashCode() : 0);
@@ -76,7 +87,8 @@ public class ArrayEntityParameters {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("ArrayEntityParameters{");
-        sb.append("maxElement=").append(maxElement);
+        sb.append("sum=").append(sum);
+        sb.append(", maxElement=").append(maxElement);
         sb.append(", minElement=").append(minElement);
         sb.append(", averageValue=").append(averageValue);
         sb.append(", elementsCount=").append(elementsCount);

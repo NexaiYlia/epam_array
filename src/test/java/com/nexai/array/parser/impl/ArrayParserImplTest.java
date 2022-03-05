@@ -1,13 +1,13 @@
 package com.nexai.array.parser.impl;
 
 import com.nexai.array.exception.ArrayException;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.testng.Assert.assertTrue;
 import static org.testng.AssertJUnit.assertEquals;
 
 public class ArrayParserImplTest {
@@ -17,19 +17,19 @@ public class ArrayParserImplTest {
     public Object[][] createParseData() {
         Object[][] data = new Object[6][2];
         data[0] = new Object[]{
-                "4 -5 -3 14 4",
-                new int[]{4, -5, -3, 14, 4}
+                "0 -88 9 11 4",
+                new int[]{0, -88, 9, 11, 4}
         };
         data[1] = new Object[]{
                 "   14   -  100     0    ",
                 new int[]{14, -100, 0}
         };
         data[2] = new Object[]{
-                "- 78",
+                "- 65",
                 new int[]{-78}
         };
         data[3] = new Object[]{
-                "44",
+                "8",
                 new int[]{44}
         };
         data[4] = new Object[]{
@@ -61,19 +61,19 @@ public class ArrayParserImplTest {
     public Object[][] createParseDataForStream() {
         Object[][] data = new Object[6][2];
         data[0] = new Object[]{
-                "4 -5 -3 14 4",
-                new int[]{4, -5, -3, 14, 4}
+                "0 -88 9 11 4",
+                new int[]{0, -88, 9, 11, 4}
         };
         data[1] = new Object[]{
                 "   14 -  100   0    ",
                 new int[]{14, -100, 0}
         };
         data[2] = new Object[]{
-                "- 78",
+                "- 65",
                 new int[]{-78}
         };
         data[3] = new Object[]{
-                "44",
+                "8",
                 new int[]{44}
         };
         data[4] = new Object[]{
@@ -123,6 +123,13 @@ public class ArrayParserImplTest {
         return arrays;
     }
 
+    @Test
+    public void parseStringLineToArrayOfIntTest() throws ArrayException {
+        int[] expected = new int[]{1, 2, 3, 4, 5};
+        int[] actual = parser.parseStringLineToArrayOfInt("1 2 3 4 5");
+        Assert.assertEquals(expected, actual);
+    }
+
     @Test(dataProvider = "parse_data")
     public void parseStringLineToArrayOfIntTest(String line, int[] expected) throws ArrayException {
         int[] actual = parser.parseStringLineToArrayOfInt(line);
@@ -136,10 +143,11 @@ public class ArrayParserImplTest {
     }
 
 
-    @Test(dataProvider = "parse_data_for_stream")
-    public void parseStringLineToArrayOfIntStreamTest(String line, int[] expected) {
-        int[] actual = parser.parseStringLineToArrayOfIntStream(line);
-        assertEquals(expected, actual);
+    @Test
+    public void parseStringLineToArrayOfIntStreamTest() {
+        int[] expected = new int[]{1, 2, 3, 4, 5};
+        int[] actual = parser.parseStringLineToArrayOfIntStream("1 2 3 4 5");
+        Assert.assertEquals(expected, actual);
     }
 
     @Test(dataProvider = "parseAllStream_data")

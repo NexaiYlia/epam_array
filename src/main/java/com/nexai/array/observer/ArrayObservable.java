@@ -18,12 +18,13 @@ public class ArrayObservable implements Observer {
         long id = arrayEntity.getIdArray();
         try {
             ArrayCalculateService calculateService = new ArrayCalculateServiceImpl();
+            int sum = calculateService.calculateSumElementOfArray(arrayEntity);
             int maxElement = calculateService.calculateMaxElementOfArray(arrayEntity);
             int minElement = 0;
             minElement = calculateService.calculateMinElementOfArray(arrayEntity);
             double averageValue = calculateService.calculateAverageValueOfArrayElements(arrayEntity);
             int elementsCount = arrayEntity.getArray().length;
-            ArrayEntityParameters parameters = new ArrayEntityParameters(maxElement, minElement, averageValue, elementsCount);
+            ArrayEntityParameters parameters = new ArrayEntityParameters(sum, maxElement, minElement, averageValue, elementsCount);
             Warehouse warehouse = Warehouse.getInstance();
             warehouse.put(id, parameters);
             logger.info("Create Warehouse with parameters" + parameters);
