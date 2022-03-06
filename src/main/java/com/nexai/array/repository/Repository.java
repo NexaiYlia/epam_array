@@ -2,6 +2,7 @@ package com.nexai.array.repository;
 
 import com.nexai.array.entity.ArrayEntity;
 import com.nexai.array.entity.ArrayEntityBase;
+import com.nexai.array.entity.Warehouse;
 
 import java.util.Collection;
 import java.util.Comparator;
@@ -17,6 +18,9 @@ public class Repository {
     }
 
     public static Repository getInstance() {
+        if (instance == null) {
+            instance = new Repository();
+        }
         return instance;
     }
 
