@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 public class ArrayParserImpl implements ArrayParser {
     private static final Logger logger = LogManager.getLogger(ArrayParserImpl.class.getName());
-    public static final String REGEX_FOR_SPLIT = "\\s+";
+    public static final String REGEX_FOR_SPLIT = ";";
 
     @Override
     public int[] parseStringLineToArrayOfInt(String line) throws ArrayException {
@@ -35,6 +35,7 @@ public class ArrayParserImpl implements ArrayParser {
         return arrayInt;
     }
 
+    @Override
     public List<int[]> parseAllLineToString(List<String> lines) throws ArrayException {
         List<int[]> arrays = new ArrayList<>();
         int[] arrayEntity;
@@ -46,6 +47,7 @@ public class ArrayParserImpl implements ArrayParser {
         return arrays;
     }
 
+    @Override
     public int[] parseStringLineToArrayOfIntStream(String line) {
         line = line.replaceAll("\\s+", " ");
         if (line.isBlank()) {
@@ -58,6 +60,7 @@ public class ArrayParserImpl implements ArrayParser {
         return array;
     }
 
+    @Override
     public List<int[]> parseAllStream(List<String> lines) {
         List<int[]> arrays = lines.stream()
                 .map(this::parseStringLineToArrayOfIntStream)

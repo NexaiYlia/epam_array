@@ -1,6 +1,6 @@
 package com.nexai.array.entity;
 
-import com.nexai.array.observer.ArrayObservable;
+import com.nexai.array.observer.impl.ArrayObserverImpl;
 import com.nexai.array.util.IdGenerator;
 
 import java.util.Arrays;
@@ -20,7 +20,7 @@ public class ArrayEntity extends ArrayEntityBase {
         this.array = array;
         this.idArray = IdGenerator.generateId();
         Warehouse.getInstance().put(idArray, new ArrayEntityParameters());
-        attach(new ArrayObservable());
+        attach(new ArrayObserverImpl());
         notifyObservers();
     }
 

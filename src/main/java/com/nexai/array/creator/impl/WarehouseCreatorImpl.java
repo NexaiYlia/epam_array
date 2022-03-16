@@ -10,8 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.List;
-import java.util.OptionalDouble;
-import java.util.OptionalInt;
+
 
 public class WarehouseCreatorImpl implements WarehouseCreator {
     private static final Logger logger = LogManager.getLogger(WarehouseCreatorImpl.class.getName());

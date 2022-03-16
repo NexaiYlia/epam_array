@@ -1,7 +1,6 @@
 package com.nexai.array.entity;
 
 import com.nexai.array.observer.ArrayEvent;
-import com.nexai.array.observer.ArrayObservable;
 import com.nexai.array.observer.Observable;
 import com.nexai.array.observer.Observer;
 

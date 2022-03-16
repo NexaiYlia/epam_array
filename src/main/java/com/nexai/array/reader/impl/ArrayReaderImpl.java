@@ -1,5 +1,6 @@
 package com.nexai.array.reader.impl;
 
+import com.nexai.array.exception.ArrayException;
 import com.nexai.array.exception.ArrayReaderException;
 import com.nexai.array.reader.ArrayReader;
 import com.nexai.array.validation.ArrayStringValidator;
@@ -10,6 +11,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -35,6 +37,29 @@ public class ArrayReaderImpl implements ArrayReader {
             throw new ArrayReaderException("The line could not be read");
         }
         return line;
+    }
+
+    @Override
+    public List<String> readAllLineFromFile(String PATHNAME) throws ArrayException {
+        List<String> lines = new ArrayList<>();
+        String currentLine;
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(PATHNAME))) {
+            while (bufferedReader.ready()) {
+                currentLine = bufferedReader.readLine();
+                ArrayStringValidator validator = new ArrayStringValidator();
+                if (validator.validateArrayStringLine(currentLine)) {
+                    logger.debug("Next array line='" + currentLine + "'");
+                }
+                if (currentLine != null) {
+                    lines.add(currentLine);
+                }
+            }
+        } catch (IOException ioException) {
+            logger.error("Exception when use BufferedReader object", ioException);
+            throw new ArrayException(ioException);
+        }
+        logger.info("All array strings read." + lines);
+        return lines;
     }
 
     public List<String> readAllLineFromFileStream(String PATHNAME) throws ArrayReaderException {

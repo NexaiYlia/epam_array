@@ -9,5 +9,7 @@ public interface ArrayCreator {
 
     ArrayEntity createEmptyArrayEntity();
 
+    List<ArrayEntity> createArrayEntity(List<int[]> arraysElements);
+
     List<ArrayEntity> createListArrayEntityStream(List<int[]> arrays);
 }

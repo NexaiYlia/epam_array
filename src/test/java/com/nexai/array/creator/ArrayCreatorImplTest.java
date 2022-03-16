@@ -2,14 +2,14 @@ package com.nexai.array.creator;
 
 import com.nexai.array.creator.impl.ArrayCreatorImpl;
 import com.nexai.array.entity.ArrayEntity;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNotEquals;
+import static org.testng.Assert.*;
 
 public class ArrayCreatorImplTest {
     public static final ArrayCreator creator = new ArrayCreatorImpl();
