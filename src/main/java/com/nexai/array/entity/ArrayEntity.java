@@ -10,15 +10,17 @@ public class ArrayEntity extends ArrayEntityBase {
     private int[] array;
     private Long idArray;
 
+    {
+       idArray= IdGenerator.generateId();
+    }
+
     public ArrayEntity() {
         this.array = new int[0];
-        this.idArray = IdGenerator.generateId();
         Warehouse.getInstance().put(idArray, new ArrayEntityParameters());
     }
 
     public ArrayEntity(int[] array) {
         this.array = array;
-        this.idArray = IdGenerator.generateId();
         Warehouse.getInstance().put(idArray, new ArrayEntityParameters());
         attach(new ArrayObserverImpl());
         notifyObservers();

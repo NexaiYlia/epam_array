@@ -61,11 +61,11 @@ public class ArrayParserImplTest {
     public Object[][] createParseDataForStream() {
         Object[][] data = new Object[6][2];
         data[0] = new Object[]{
-                "0 -88 9 11 4",
+                "0; -88; 9; 1;1 4",
                 new int[]{0, -88, 9, 11, 4}
         };
         data[1] = new Object[]{
-                "   14 -  100   0    ",
+                "   14; -  100;   0    ",
                 new int[]{14, -100, 0}
         };
         data[2] = new Object[]{
@@ -103,8 +103,8 @@ public class ArrayParserImplTest {
 
     public List<String> createLinesList() {
         List<String> lines = new ArrayList<>();
-        lines.add("4 -5 -3 14 4");
-        lines.add("   14  -  100    0    ");
+        lines.add("4; -5;-3; 14; 4");
+        lines.add("   14;  -  100;    0");
         lines.add("- 78");
         lines.add("44");
         lines.add("");
@@ -139,23 +139,21 @@ public class ArrayParserImplTest {
     @Test(dataProvider = "parseAll_data")
     public void parseAllLineToStringTest(List<String> lines, List<int[]> expected) throws ArrayException {
         List<int[]> actual = parser.parseAllLineToString(lines);
-        assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 
 
     @Test
     public void parseStringLineToArrayOfIntStreamTest() {
         int[] expected = new int[]{1, 2, 3, 4, 5};
-        int[] actual = parser.parseStringLineToArrayOfIntStream("1 2 3 4 5");
+        int[] actual = parser.parseStringLineToArrayOfIntStream("1;2;3;4;5");
         Assert.assertEquals(expected, actual);
     }
 
     @Test(dataProvider = "parseAllStream_data")
     public void parseAllStreamTest(List<String> lines, List<int[]> expected) {
         List<int[]> actual = parser.parseAllStream(lines);
-        assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 }
-
-
 

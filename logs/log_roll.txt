@@ -1,95 +1,74 @@
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 5, -7, 11, 0]
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 5, -7, 11, 0]
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[3, 5, -7, 11, 0]
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.observer.impl.ArrayObserverImpl - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[11], minElement=OptionalInt[-7], averageValue=OptionalDouble[2.0], elementsCount=OptionalInt[5]}
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[3, 5, -7, 11, 0]
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate min element of array[3, 5, -7, 11, 0]
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate average value of array elements[3, 5, -7, 11, 0]
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.observer.impl.ArrayObserverImpl - Create Warehouse with parametersArrayEntityParameters{maxElement=OptionalInt[11], minElement=OptionalInt[-7], averageValue=OptionalDouble[2.0], elementsCount=OptionalInt[5]}
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArrayCalculateServiceImpl - Calculate max element of array[]
-2022-03-16 23:30:21 [main] ERROR
-            nexai.array.service.impl.ArrayCalculateServiceImpl - This array is empty or null
-2022-03-16 23:30:21 [main] ERROR
-            nexai.array.observer.impl.ArrayObserverImpl - Create Warehouse with parameters is failed 
-com.nexai.array.exception.ArrayException: This array is empty or null
-	at com.nexai.array.service.impl.ArrayCalculateServiceImpl.calculateMaxElementOfArray(ArrayCalculateServiceImpl.java:50) ~[classes/:?]
-	at com.nexai.array.observer.impl.ArrayObserverImpl.parameterChanged(ArrayObserverImpl.java:23) [classes/:?]
-	at com.nexai.array.entity.ArrayEntityBase.notifyObservers(ArrayEntityBase.java:31) [classes/:?]
-	at com.nexai.array.entity.ArrayEntity.<init>(ArrayEntity.java:24) [classes/:?]
-	at com.nexai.array.service.impl.ArraySortServiceImplTest.<init>(ArraySortServiceImplTest.java:13) [test-classes/:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78) [?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) [?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) [?:?]
-	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:38) [testng-7.5.jar:7.5]
-	at org.testng.ITestObjectFactory.newInstance(ITestObjectFactory.java:18) [testng-7.5.jar:7.5]
-	at org.testng.internal.objects.SimpleObjectDispenser.instantiateUsingDefaultConstructor(SimpleObjectDispenser.java:178) [testng-7.5.jar:7.5]
-	at org.testng.internal.objects.SimpleObjectDispenser.createInstance(SimpleObjectDispenser.java:87) [testng-7.5.jar:7.5]
-	at org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:40) [testng-7.5.jar:7.5]
-	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:28) [testng-7.5.jar:7.5]
-	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:106) [testng-7.5.jar:7.5]
-	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:136) [testng-7.5.jar:7.5]
-	at org.testng.TestClass.getInstances(TestClass.java:129) [testng-7.5.jar:7.5]
-	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:109) [testng-7.5.jar:7.5]
-	at org.testng.TestClass.init(TestClass.java:101) [testng-7.5.jar:7.5]
-	at org.testng.TestClass.<init>(TestClass.java:66) [testng-7.5.jar:7.5]
-	at org.testng.TestRunner.initMethods(TestRunner.java:465) [testng-7.5.jar:7.5]
-	at org.testng.TestRunner.init(TestRunner.java:333) [testng-7.5.jar:7.5]
-	at org.testng.TestRunner.init(TestRunner.java:286) [testng-7.5.jar:7.5]
-	at org.testng.TestRunner.<init>(TestRunner.java:176) [testng-7.5.jar:7.5]
-	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:635) [testng-7.5.jar:7.5]
-	at org.testng.SuiteRunner.init(SuiteRunner.java:221) [testng-7.5.jar:7.5]
-	at org.testng.SuiteRunner.<init>(SuiteRunner.java:114) [testng-7.5.jar:7.5]
-	at org.testng.TestNG.createSuiteRunner(TestNG.java:1342) [testng-7.5.jar:7.5]
-	at org.testng.TestNG.createSuiteRunners(TestNG.java:1318) [testng-7.5.jar:7.5]
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1160) [testng-7.5.jar:7.5]
-	at org.testng.TestNG.runSuites(TestNG.java:1092) [testng-7.5.jar:7.5]
-	at org.testng.TestNG.run(TestNG.java:1060) [testng-7.5.jar:7.5]
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) [testng-rt.jar:?]
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) [testng-rt.jar:?]
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArraySortServiceImpl - Array sorted with strem[I@6dee4f1b
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArraySortServiceImpl - Array sorted by bubble[I@22295ec4
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArraySortServiceImpl - Array sorted by insertion[I@3f270e0a
-2022-03-16 23:30:21 [main] INFO 
-            nexai.array.service.impl.ArraySortServiceImpl - Array sorted by selection[I@7241a47d
-2022-03-16 23:30:38 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linesrc\main\test\java\resources\data\array.txt
-2022-03-16 23:30:38 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
-2022-03-16 23:30:38 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
-2022-03-16 23:34:08 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
-2022-03-16 23:34:32 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
-2022-03-16 23:34:40 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
-2022-03-16 23:34:58 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
-2022-03-16 23:36:02 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
-2022-03-16 23:36:15 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linedata\array.txt
-2022-03-16 23:36:37 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linedata\array.txt
-2022-03-16 23:36:59 [main] ERROR
-            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linedata\array.txt
-2022-03-16 23:37:23 [main] INFO 
+2022-03-17 09:08:16 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - All line is parsed with stream[]
+2022-03-17 09:08:48 [main] INFO 
             nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
-2022-03-16 23:37:23 [main] ERROR
+2022-03-17 09:08:48 [main] ERROR
             nexai.array.parser.impl.ArrayParserImpl - Incorrect data format
-2022-03-16 23:37:23 [main] INFO 
+2022-03-17 09:08:48 [main] INFO 
             nexai.array.parser.impl.ArrayParserImpl - Arrays list parsed.[]
+2022-03-17 09:09:50 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linedata\array.txt
+2022-03-17 09:10:30 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linearray.txt
+2022-03-17 09:10:47 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linedata\array.txt
+2022-03-17 09:11:11 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-17 09:11:49 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linedata\array.txt
+2022-03-17 09:13:09 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-17 09:33:07 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='12345' parsed. [12345]
+2022-03-17 09:34:17 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='12345' parsed. [12345]
+2022-03-17 09:34:59 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='1;2;3;4;5' parsed. [1, 2, 3, 4, 5]
+2022-03-17 09:35:05 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='4;-5;-3;14;4' parsed. [4, -5, -3, 14, 4]
+2022-03-17 09:35:05 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='14;-100;0' parsed. [14, -100, 0]
+2022-03-17 09:35:05 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='-78' parsed. [-78]
+2022-03-17 09:35:05 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='44' parsed. [44]
+2022-03-17 09:35:05 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - All line is parsed with stream[[I@4ce1d6d0, [I@24111ef1, [I@1f3f02ee, [I@1fde5d22, [I@5dcb4f5f, [I@71812481]
+2022-03-17 09:35:05 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - All line is parsed with stream[]
+2022-03-17 09:37:22 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-17 09:37:22 [main] ERROR
+            nexai.array.parser.impl.ArrayParserImpl - Incorrect data format
+2022-03-17 09:37:22 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Arrays list parsed.[]
+2022-03-17 09:37:33 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='4;-5;-3;14;4' parsed. [4, -5, -3, 14, 4]
+2022-03-17 09:37:33 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='14;-100;0' parsed. [14, -100, 0]
+2022-03-17 09:37:33 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='-78' parsed. [-78]
+2022-03-17 09:37:33 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Array from line='44' parsed. [44]
+2022-03-17 09:37:33 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - All line is parsed with stream[[I@6155d082, [I@3a5ecce3, [I@561868a0, [I@2ea6e30c, [I@6138e79a, [I@2dcd168a]
+2022-03-17 09:37:33 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - All line is parsed with stream[]
+2022-03-17 09:39:46 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-17 09:39:46 [main] ERROR
+            nexai.array.parser.impl.ArrayParserImpl - Incorrect data format
+2022-03-17 09:39:46 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Arrays list parsed.[]
+2022-03-17 09:40:34 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Parse string line to array of int
+2022-03-17 09:40:34 [main] ERROR
+            nexai.array.parser.impl.ArrayParserImpl - Incorrect data format
+2022-03-17 09:40:34 [main] INFO 
+            nexai.array.parser.impl.ArrayParserImpl - Arrays list parsed.[]
+2022-03-17 09:42:41 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linearray.txt
+2022-03-17 09:42:48 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect line
+2022-03-17 09:44:34 [main] ERROR
+            nexai.array.reader.impl.ArrayReaderImpl - Incorrect linedata\array.txt

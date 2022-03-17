@@ -17,6 +17,7 @@ import java.util.List;
 public class ArrayRepositoryCreatorImpl implements ArrayRepositoryCreator {
     private static final Logger logger = LogManager.getLogger(ArrayRepositoryCreatorImpl.class.getName());
 
+    @Override
     public Repository createRepository(String fileName) {
         ArrayReader reader = new ArrayReaderImpl();
         Repository repository = Repository.getInstance();
@@ -42,7 +43,7 @@ public class ArrayRepositoryCreatorImpl implements ArrayRepositoryCreator {
     }
 
     @Override
-    public void addArrayToRepository(int... array)  {
+    public void addArrayToRepository(int... array) {
         ArrayCreatorImpl creator = new ArrayCreatorImpl();
         ArrayEntity arrayEntity = creator.createArrayEntity(array);
         Repository repository = Repository.getInstance();

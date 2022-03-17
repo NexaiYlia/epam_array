@@ -1,7 +1,6 @@
 package com.nexai.array.exception;
 
 public class ArrayReaderException extends Exception {
-    private static final long serialVersionUiD = 1L;
 
     public ArrayReaderException() {
     }
